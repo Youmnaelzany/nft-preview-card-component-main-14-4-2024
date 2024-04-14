@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+---
+
+<Layout title="Frontend Mentor | NFT preview card component">
+  <main class="mx-6 my-[3.88rem] lg:mx-[34.06rem] lg:my-[9.5rem]">
+    <section
+      class="h-[33.9375rem] w-[20.4375rem] rounded-[0.9375rem] bg-[#15263F] p-6 pr-[1.56rem] lg:h-[37.25rem] lg:w-[21.875rem]"
+    >
+      <div class="size-[18.875rem]">
+        <img
+          src="/images/image-equilibrium.jpg"
+          alt="image-equilibrium"
+          class="relative rounded-lg"
+        />
+      </div>
+      <div
+        class="absolute top-[10.875rem] flex size-[18.875rem] items-center justify-center rounded-lg bg-[#00FFF8] bg-opacity-0 transition-all duration-500 ease-in-out hover:bg-opacity-[0.503]"
+      >
+        <img
+          src="/images/icon-view.svg"
+          alt="icon-view"
+          class="hidden hover:block"
+        />
+      </div>
+      <div class="mt-6">
+        <h1
+          class="text-[1.375rem] font-semibold leading-normal text-[#ffffff] transition-colors duration-500 ease-in-out hover:text-[#00FFF8]"
+        >
+          Equilibrium #3429
+        </h1>
+        <p class="text-lg font-light leading-relaxed text-[#8BACD9]">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div
+          class="relative mt-4 flex items-center justify-between gap-[6.11rem] after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[18.375rem] after:bg-[#2E405A]"
+        >
+          <div class="flex items-center gap-2">
+            <img
+              src="/public/images/icon-ethereum.svg"
+              alt="icon-ethereum"
+              class=""
+            />
+            <h3
+              class="text-[0.9375rem] font-semibold leading-normal text-[#00FFF8]"
+            >
+              0.041 ETH
+            </h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <img
+              src="/public/images/icon-clock.svg"
+              alt="icon-clock"
+              class=""
+            />
+            <h3
+              class="text-[0.9375rem] font-normal leading-normal text-[#8BACD9]"
+            >
+              3 days left
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 flex items-center gap-4">
+        <img
+          src="/public/images/image-avatar.png"
+          alt=""
+          class="size-[2.0625rem] rounded-full border border-solid border-[#ffffff]"
+        />
+        <h3 class="text-[0.9375rem] font-normal leading-normal text-[#ffffff]">
+          <span class="text-[#8BACD9]">Creation</span> of Jules Wyvern
+        </h3>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  body {
+    background-color: #0d192c;
+    font-family: "Outfit", sans-serif;
+  }
+</style>
